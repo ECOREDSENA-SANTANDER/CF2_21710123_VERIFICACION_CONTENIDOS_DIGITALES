@@ -19,10 +19,10 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: 'Verificación de integridad y autenticidad de procedencia',
       titulo: 'Cuestionario',
       introduccion:
-        '<b> Objetivo:</b> Evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
+        '<b> Objetivo:</b> verificar la comprensión de los métodos de verificación, la integridad digital, las firmas y certificados, las credenciales C2PA, la verificación de contenidos sintéticos, la normativa y el tratamiento responsable de la información, la valoración de resultados y la elaboración del informe técnico de verificación.',
       barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
@@ -30,477 +30,698 @@ export default {
         {
           id: 1,
           texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
+            '¿Qué caracteriza al método combinado en la verificación de contenidos digitales?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+              texto:
+                'Se limita a observar el contenido sin utilizar herramientas técnicas.',
               esCorrecta: false,
             },
             {
               id: 'b',
               texto:
-                'Seleccionar y editar capas que identifican márgenes, pistas y componentes.',
+                'Utiliza herramientas para calcular o validar y complementa los resultados con interpretación, contraste y documentación.',
               esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Ajustar automáticamente las pistas de cada componente.',
+              texto:
+                'Reemplaza el análisis humano por una decisión automática de verdadero o falso.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Modificar el tamaño de los componentes.',
+              texto:
+                'Consiste únicamente en consultar la fecha de creación registrada en el archivo.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
           mensaje_incorrecto:
-            'Lo sentimos, su respuesta no es la correcta. <em>Board</em> del <em>software</em> EAGLE.',
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 2,
           texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            '¿Qué información debe documentarse para favorecer la repetibilidad de un proceso de verificación?',
+          imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto: '<em>Auto</em>',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: '<em>Text</em>',
-              esCorrecta: true,
-            },
-            {
-              id: 'd',
-              texto: '<em>Route</em>',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
-          imagen: '@/assets/actividad/imagen1.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'Para borrar conexiones.',
+              texto: 'Solo el nombre del archivo y la conclusión final.',
               esCorrecta: false,
             },
             {
               id: 'b',
               texto:
-                'Para cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
-              esCorrecta: false,
+                'El activo analizado, la copia empleada, el método, la herramienta, la operación, el resultado, la evidencia que sustenta la interpretación y las limitaciones.',
+              esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Para agregar nuevas capas.',
+              texto:
+                'Únicamente las capturas de pantalla generadas por la herramienta.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Para resaltar conexiones de pines.',
-              esCorrecta: true,
+              texto: 'Solo la fecha en que se realizó la verificación.',
+              esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 3,
+          texto:
+            'Si dos archivos procesados con el mismo algoritmo SHA-256 producen la misma huella digital, ¿qué puede afirmarse?',
+          imagen: '@/assets/actividad/imagen3.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Que los dos contenidos son verdaderos en su contexto.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Que ambos archivos fueron creados por la misma persona.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Que existe evidencia fuerte de que contienen la misma secuencia de datos.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto:
+                'Que ninguno de los archivos ha sido editado desde su creación original.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 4,
           texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            'Dos fotografías se observan visualmente iguales, pero sus <i>hashes</i> son diferentes. ¿Cuál es la interpretación más adecuada?',
+          imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Text</em>',
+              texto: 'Una de las fotografías necesariamente es falsa.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: '<em>Layer</em>',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: '<em>Board</em>',
+              texto:
+                'Existe una diferencia digital que puede deberse a compresión, metadatos, dimensiones, formato u otra transformación.',
               esCorrecta: true,
             },
             {
+              id: 'c',
+              texto:
+                'El algoritmo <i>hash</i> no funciona para imágenes digitales.',
+              esCorrecta: false,
+            },
+            {
               id: 'd',
-              texto: '<em>Route</em>',
+              texto: 'Las fotografías deben tener exactamente el mismo origen.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+          texto:
+            '¿Cuál es el propósito principal de una vinculación fuerte o <i>hard binding</i> en C2PA?',
+          imagen: '@/assets/actividad/imagen05.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
               texto:
-                'Enrutar manualmente las pistas que no se ajustaron automáticamente.',
+                'Comprobar la correspondencia criptográfica exacta entre el activo y la información de procedencia protegida.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Resaltar las conexiones de los pines.',
+              texto:
+                'Identificar únicamente similitudes visuales entre imágenes redimensionadas.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Crear una nueva capa en el diseño.',
+              texto: 'Determinar si el contenido presentado es verdadero.',
               esCorrecta: false,
             },
             {
               id: 'd',
               texto:
-                'Cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+                'Clasificar automáticamente el contenido como sintético o natural.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 6,
           texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué característica distingue a una vinculación flexible o <i>soft binding</i>?',
+          imagen: '@/assets/actividad/imagen6.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Borrar componentes.',
+              texto:
+                'Garantiza que dos archivos tengan exactamente los mismos <i>bytes</i>.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Ajustar automáticamente las pistas en cada componente.',
-              esCorrecta: true,
+              texto:
+                'Solo funciona cuando el contenido nunca ha sido transformado.',
+              esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Crear nuevas conexiones de pines.',
+              texto:
+                'Sustituye la necesidad de registrar procedencia y versiones.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Seleccionar y editar capas.',
-              esCorrecta: false,
+              texto:
+                'Puede relacionar contenidos perceptualmente similares después de determinadas transformaciones.',
+              esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 7,
           texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué permite establecer una firma digital válida dentro del alcance de una verificación técnica?',
+          imagen: '@/assets/actividad/imagen7.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Colocar los componentes en un solo bloque.',
+              texto: 'Que todas las afirmaciones del contenido son verdaderas.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Agrupar los componentes en bloques funcionales.',
+              texto:
+                'Que la comprobación criptográfica fue satisfactoria para los datos firmados.',
               esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Alinear todos los terminales a la derecha.',
+              texto: 'Que el contenido nunca fue publicado anteriormente.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Colocar los terminales lo más alejados posible.',
+              texto: 'Que el archivo no contiene datos personales.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 8,
           texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué aspecto debe revisarse además de la fecha de vencimiento de un certificado digital?',
+          imagen: '@/assets/actividad/imagen8.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'El tamaño visual del documento firmado.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'El nombre del archivo donde se encuentra la firma.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
+              texto:
+                'Su estado de revocación y la cadena de confianza asociada.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'La resolución de pantalla del equipo utilizado.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 9,
           texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Cuál es la función principal de un sello de tiempo en un proceso de verificación?',
+          imagen: '@/assets/actividad/imagen9.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: false,
+              texto:
+                'Aportar evidencia verificable sobre la existencia o firma de determinados datos en un momento específico.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
-              esCorrecta: true,
+              texto: 'Reemplazar la firma digital del contenido.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Modificar automáticamente la fecha de creación de los metadatos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Confirmar que el contenido representado corresponde con hechos reales.',
+              esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 10,
           texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Cuál secuencia representa correctamente una cadena de confianza simplificada?',
+          imagen: '@/assets/actividad/imagen10.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Archivo → metadato → detector de IA → usuario.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Hash → imagen → publicación → repositorio.',
               esCorrecta: false,
             },
+            {
+              id: 'c',
+              texto: 'Sello de tiempo → archivo → editor → plataforma.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Certificado del firmante → autoridad intermedia → autoridad raíz confiable.',
+              esCorrecta: true,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 11,
           texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
-          imagen: '@/assets/actividad/imagen3.png',
+            'Dentro de una credencial C2PA, ¿qué representa una afirmación o <i>assertion</i>?',
+          imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto:
+                'Una decisión definitiva sobre la veracidad del contenido.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Una copia obligatoria del archivo original.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Información acerca del activo, como acciones, metadatos, ingredientes o dispositivos.',
               esCorrecta: true,
             },
+            {
+              id: 'd',
+              texto:
+                'Un certificado raíz utilizado exclusivamente para cifrar el contenido.',
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 12,
           texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
+            '¿Qué se entiende por ingrediente dentro de una credencial de contenido?',
+          imagen: '@/assets/actividad/imagen2.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Un activo incorporado para producir o transformar otro contenido.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto:
+                'Un algoritmo utilizado exclusivamente para calcular un <i>hash</i>.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Una autoridad encargada de emitir certificados digitales.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Un nivel de confianza asignado al informe técnico.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 13,
+          texto:
+            '¿Qué debe concluirse cuando una herramienta no encuentra una credencial C2PA asociada a un contenido?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Que el contenido es necesariamente falso.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 13,
-          texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'Verdadero',
+              texto:
+                'Que no se localizó una credencial disponible y deben considerarse otras evidencias de verificación.',
               esCorrecta: true,
             },
             {
-              id: 'b',
-              texto: 'Falso',
+              id: 'c',
+              texto:
+                'Que el archivo fue generado obligatoriamente por inteligencia artificial.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Que la firma digital del contenido fue revocada.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 14,
           texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
+            'Una herramienta indica 87 % de probabilidad de que una imagen sea generada por inteligencia artificial. ¿Cómo debe interpretarse este resultado?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Como una prueba definitiva de generación sintética.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Como una validación equivalente a una firma digital.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Como evidencia suficiente para descartar todas las demás fuentes.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Como un indicador automatizado que debe contrastarse con procedencia, metadatos, credenciales y otras evidencias.',
               esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 15,
           texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+            '¿Qué práctica responde al tratamiento responsable de datos personales durante una verificación?',
+          imagen: '@/assets/actividad/imagen05.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto:
+                'Publicar todos los metadatos encontrados para aumentar la transparencia.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Conservar indefinidamente toda la información obtenida, aunque no sea necesaria.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Utilizar la evidencia necesaria y proteger los datos personales o confidenciales que no deban divulgarse.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto:
+                'Compartir la copia de trabajo con cualquier persona que solicite revisarla.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 16,
+          texto:
+            '¿Cuál de los siguientes casos corresponde a una evidencia confirmada?',
+          imagen: '@/assets/actividad/imagen6.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Una huella digital que coincide con la referencia después de una comprobación técnica.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto:
+                'Un nombre de autor presente en XMP sin verificación independiente.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'La ausencia de metadatos EXIF en una fotografía.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Una fecha mencionada en una publicación secundaria sin soporte adicional.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 17,
+          texto:
+            '¿Cuándo resulta apropiado clasificar un contenido como no verificable?',
+          imagen: '@/assets/actividad/imagen7.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Cuando existe una firma digital válida y una referencia coincidente.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Cuando la evidencia disponible no permite completar la comprobación ni sustentar una conclusión responsable.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Cuando el archivo contiene metadatos técnicos completos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Cuando todas las fuentes y resultados son consistentes.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 18,
+          texto:
+            '¿Qué criterios orientan la asignación pedagógica de un nivel de confianza técnica?',
+          imagen: '@/assets/actividad/imagen8.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Popularidad, extensión, formato y número de descargas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Autoría declarada, tamaño, nombre y color del archivo.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Antigüedad, resolución, ubicación y tipo de dispositivo.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Suficiencia, consistencia, trazabilidad, validez e incertidumbre de las evidencias.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 19,
+          texto:
+            '¿Cuál de las siguientes estructuras corresponde al informe técnico de verificación propuesto en el componente?',
+          imagen: '@/assets/actividad/imagen9.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Portada, publicidad, redes sociales, anexos y conclusiones.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Identificación del análisis, propósito, alcance, metodología, evidencias, hallazgos y resultados, nivel de confianza, conclusiones, limitaciones y recomendaciones.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto:
+                'Título, opinión personal, resumen de internet y decisión automática.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Metadatos, fotografías, contraseña, firma manuscrita y archivo comprimido.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 20,
+          texto:
+            'Si durante una verificación se identifican inconsistencias relevantes entre las evidencias, ¿qué acción es la más adecuada?',
+          imagen: '@/assets/actividad/imagen10.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Realizar verificación adicional antes de formular una conclusión definitiva.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto:
+                'Publicar inmediatamente el contenido porque la inconsistencia no es importante.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Eliminar las evidencias que presenten diferencias.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Asignar automáticamente un nivel de confianza técnica alto.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'Ha acertado la respuesta.',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
       ],
-      mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
+      mensaje_final_aprobado:
+        'Ha superado la actividad y demuestra sólidos conocimientos sobre el componente formativo.',
       mensaje_final_reprobado:
-        'Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
-    },
-    parrafo: {
-      tema: 'Comprendiendo el diseño de presupuestos y estrategias de ahorro',
-      titulo: 'Completar frases',
-      introduccion:
-        '<b> Objetivo:</b> identificar conceptos clave relacionados con el presupuesto personal, la cultura del ahorro y la planificación financiera.',
-      instruccion:
-        'Complete correctamente los enunciados con la palabra que falta según los contenidos estudiados en el componente formativo.',
-      imagen: '@/assets/actividad/imagen1.png',
-      barajarPreguntas: true,
-      textos: [
-        {
-          id: 1,
-          texto:
-            'El [respuesta] personal es una herramienta que permite proyectar ingresos y egresos para mantener la estabilidad económica.',
-          respuesta: 'presupuesto',
-        },
-        {
-          id: 2,
-          texto:
-            'La constancia en el cumplimiento del presupuesto refleja un alto nivel de [respuesta] financiera.',
-          respuesta: 'disciplina',
-        },
-        {
-          id: 3,
-          texto:
-            'Ahorrar no es lo que sobra, sino lo que se [respuesta] guardar antes de gastar.',
-          respuesta: 'planifica',
-        },
-        {
-          id: 4,
-          texto:
-            'Un gasto innecesario que puede eliminarse sin afectar la calidad de vida básica se denomina gasto [respuesta].',
-          respuesta: 'discrecional',
-        },
-        {
-          id: 5,
-          texto:
-            'La cultura del ahorro promueve el uso responsable de los [respuesta] disponibles.',
-          respuesta: 'recursos',
-        },
-        {
-          id: 6,
-          texto:
-            'El estado de [respuesta] personales permite analizar la relación entre ingresos y egresos en un periodo determinado.',
-          respuesta: 'resultados',
-        },
-        {
-          id: 7,
-          texto:
-            'Cuando los ingresos son mayores que los egresos se generan una [respuesta] que puede destinarse al ahorro.',
-          respuesta: 'utilidad',
-        },
-        {
-          id: 8,
-          texto:
-            'Uno de los beneficios de ejecutar un presupuesto es la reducción del [respuesta] financiero.',
-          respuesta: 'estrés',
-        },
-        {
-          id: 9,
-          texto:
-            'Evitar gastos impulsivos y mantener límites presupuestales refleja [respuesta] financiera.',
-          respuesta: 'disciplina',
-        },
-        {
-          id: 10,
-          texto:
-            'Contar con un fondo de [respuesta] permite enfrentar gastos inesperados sin afectar el presupuesto.',
-          respuesta: 'emergencia',
-        },
-      ],
+        'No ha superado la actividad. Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
     },
   }),
 }

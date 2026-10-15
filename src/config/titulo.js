@@ -1,1 +1,1 @@
-module.exports = 'Ecored Base PKG'
+module.exports = 'Verificación de integridad y autenticidad de procedencia'

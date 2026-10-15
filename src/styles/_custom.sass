@@ -3,16 +3,21 @@
   &-1
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 68%
-    left: -10%
+    top: 58%
+    left: 42%
     width: 20%
   &-2
     animation: float1 2.5s ease-in-out infinite alternate
     position: absolute
-    top: 30%
-    right: 10%
-    width: 20%
-
+    top: 72%
+    right: 70%
+    width: 30%
+  &-3
+    animation: float1 2.5s ease-in-out infinite alternate
+    position: absolute
+    top: 5%
+    right: 20%
+    width: 17%
 
 @keyframes float1
   0%
@@ -21,24 +26,49 @@
   100%
     transform: translateY(0px)
 
+.banner-principal
+  @media (max-width: $bp-max-md)
+    .tarjeta
+      background-image: url('../assets/curso/portada/fondo-banner-principal-movil.png') !important
+      background-repeat: no-repeat 
+      background-size: 100% 100%
+      background-position: cover
+    &__info
+      padding-top: 14% !important 
+    h1, p
+      color: $white
+
+.banner-principal  
+  @media (min-width: 768px) and (max-width: 1024px)
+    .tarjeta
+      background-image: url('../assets/curso/portada/fondo-banner-principal-tablet.png') !important
+      background-repeat: no-repeat 
+      background-size: 100% 100%
+      background-position: cover
+    &__info
+      padding-top: 8% !important 
+    h1, p
+      color: $white  
+.banner-interno__fondo    
+  background-image: url("../assets/curso/portada/banner-interno.png") !important
 .col-lg-7.col-xxl-5.ps-4.ps-sm-5.py-4.py-sm-5.banner-principal__info
   flex: 0 0 auto !important
-  width: 58.33333333% !important
+  width: 45.33333333% !important
 .banner-principal__img 
   padding-bottom: 0 !important;
 .banner-principal__row .banner-principal__img 
     width: 33%;
-    
+
 .banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
-  color: $color-sistema-texto !important  
+  color: #ffff !important  
 
 .boton *, .boton--sm *,
 .barra-avance__boton--regresar span
-  color: $white !important
+  color: #12263F !important
 .banner-interno__titulo h1, .banner-interno__titulo h2, 
 .banner-interno__titulo h3, .banner-interno__titulo h4, 
 .banner-interno__titulo h5, .banner-interno__titulo h6
-  color: $color-sistema-texto !important  
+  color: #fff !important  
 .titulo-principal.color-acento-contenido .titulo-principal__numero span
   color: $white !important
 figcaption 
@@ -64,8 +94,13 @@ figcaption
 .bg-color
   &-1
     background-color: $color-primario
-
-
+.titulo-principal.color-acento-contenido .titulo-principal__numero 
+  background-color: #99B9E9
+  
+.titulo-principal.color-acento-contenido .titulo-principal__numero span 
+  color: #12263F !important
+.bg1
+  background-color: #622E80
 
 
 
