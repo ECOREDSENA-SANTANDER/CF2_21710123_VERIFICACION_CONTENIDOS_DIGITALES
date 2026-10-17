@@ -101,10 +101,67 @@ figcaption
   color: #12263F !important
 .bg1
   background-color: #622E80
+.bg2
+  background-color: #EFE9F2
+.bg3
+  background-color: #99B9E9
+.bg4
+  background-color: #EFE9F2
+  border-radius: 20px
+.bg5
+  background-color: #C0ABCC
+.fondo01
+  background-image: url('../assets/curso/temas/t4/fondo1.png')
+  background-position: center
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  margin-inline: -3.4rem
+  @media screen and (max-width: 992px)
+    margin-inline: -3rem  
+    background-size: cover 
+  @media screen and (max-width: 767px)
+    margin-inline: -1.4rem  
+    background-size: cover 
+.fondo02
+  background-image: url('../assets/curso/temas/t4/fondo2.png')
+  background-position: center
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  @media screen and (max-width: 992px)
+    background-size: cover 
+  @media screen and (max-width: 767px)
+    background-size: cover 
+.w-card-icon
+  width: min-content
+  z-index: 1
+.w-card-text
+  position: relative
+  padding-left: 50px
+  padding-right: 50px
+  left: -30px
+  top: 8px
 
+.tabs-c
+  border-bottom: 0px
+  &__header
+    margin-bottom: 0px
+  &__tab--active
+    font-weight: bold
+.tabs-c.color-primario .tabs-c__tab--active 
+  border-bottom-color: #01D2C8 !important
+  background-color: #FFFFFF
+.tabs-c.color-primario .tabs-c__tab--active:before 
+  border-top-color: #01D2C8
+.tabs-c__tab 
+  border-bottom: 4px solid #EFE9F2
+  background-color: #EFE9F2
+.text-izq
+  text-align: left !important
 
-
-
+.cajon.color-secundario 
+  background-color: #F7E5E7
+.titulo-segundo:after 
+  border-left-color: #0050C8
 
 /**************************************************************/
 /*Media Queries*/  

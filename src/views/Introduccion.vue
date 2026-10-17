@@ -9,7 +9,7 @@
           i.fas.fa-info
       h1 Introducción
     
-    .row.justify-content-center.mb-3.bg1.g-0
+    .row.justify-content-center.mb-3.bg1.g-0(data-aos="fade-down-left")
       .col-lg-5.p-0
         img.w-100.h-100.d-block.object-fit-cover(src='@/assets/curso/temas/intro/img01.png', alt='')
       .col-lg-7
