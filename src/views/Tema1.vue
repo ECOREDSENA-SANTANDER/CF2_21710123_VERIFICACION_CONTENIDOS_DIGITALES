@@ -37,13 +37,13 @@
             .col-lg-5.mb-3.col-10.col-md-8
               img(src='@/assets/curso/temas/t1/img03.png', alt='')
             .col-lg-6
-              p El análisis automatizado utiliza aplicaciones, bibliotecas o servicios capaces de ejecutar operaciones técnicas de forma consistente, como extraer metadatos, calcular hashes, comparar estructuras, validar firmas o recuperar manifiestos C2PA. Su principal ventaja es la rapidez y repetibilidad; su principal límite es que el resultado solo responde al método aplicado. Un mensaje como “no se encontraron credenciales de contenido” no significa “el contenido es falso”; indica únicamente que el mecanismo consultado no localizó una credencial disponible.
+              p El análisis automatizado utiliza aplicaciones, bibliotecas o servicios capaces de ejecutar operaciones técnicas de forma consistente, como extraer metadatos, calcular #[em hashes], comparar estructuras, validar firmas o recuperar manifiestos C2PA. Su principal ventaja es la rapidez y repetibilidad; su principal límite es que el resultado solo responde al método aplicado. Un mensaje como “no se encontraron credenciales de contenido” no significa “el contenido es falso”; indica únicamente que el mecanismo consultado no localizó una credencial disponible.
         .py-3.py-md-4(titulo="Método combinado")
           .row.justify-content-center.align-items-center
             .col-lg-5.mb-3.col-10.col-md-8
               img(src='@/assets/curso/temas/t1/img04.png', alt='')
             .col-lg-6
-              p El método combinado integra ambas perspectivas: la herramienta realiza cálculos o validaciones y la persona interpreta, contrasta y documenta. Este enfoque es el más pertinente para el componente porque la competencia no se reduce al uso de aplicaciones, sino a comprender qué prueba cada procedimiento y cuáles son sus límites. Ante un video institucional, por ejemplo, puede combinarse extracción de metadatos, cálculo de hash, comparación con repositorio, búsqueda de credenciales y contraste con registros de publicación para producir una conclusión proporcionada a la evidencia (Chandra et al., 2024).
+              p El método combinado integra ambas perspectivas: la herramienta realiza cálculos o validaciones y la persona interpreta, contrasta y documenta. Este enfoque es el más pertinente para el componente porque la competencia no se reduce al uso de aplicaciones, sino a comprender qué prueba cada procedimiento y cuáles son sus límites. Ante un video institucional, por ejemplo, puede combinarse extracción de metadatos, cálculo de #[em hash], comparación con repositorio, búsqueda de credenciales y contraste con registros de publicación para producir una conclusión proporcionada a la evidencia (Chandra et al., 2024).
 
       separador
       #t_1_2.titulo-segundo.mb-4(data-aos="zoom-in-left")
@@ -82,7 +82,7 @@
                   td Coincidencia de huellas
                 tr
                   td Interpretación
-                  td Los archivos contienen la misma secuencia de bytes
+                  td Los archivos contienen la misma secuencia de #[em bytes]
                 tr
                   td Limitación
                   td La coincidencia no determina por sí sola el contexto real de la grabación
@@ -99,7 +99,7 @@
 
       .cajon.color-secundario.p-4.mb-4(data-aos="fade-down-left")
         .h5 Comparar archivos equivalentes
-        p.mb-0 Un ejemplo frecuente ocurre al convertir una fotografía JPEG a PNG antes de calcular una huella. Las huellas serán diferentes porque los archivos ya no contienen la misma secuencia de datos. El error no está en la función hash, sino en comparar objetos que no deberían esperarse como idénticos. La práctica adecuada consiste en comparar archivos que deban coincidir exactamente o, si se examinan versiones diferentes, interpretar la diferencia como parte de la relación entre versiones.
+        p.mb-0 Un ejemplo frecuente ocurre al convertir una fotografía JPEG a PNG antes de calcular una huella. Las huellas serán diferentes porque los archivos ya no contienen la misma secuencia de datos. El error no está en la función #[em hash], sino en comparar objetos que no deberían esperarse como idénticos. La práctica adecuada consiste en comparar archivos que deban coincidir exactamente o, si se examinan versiones diferentes, interpretar la diferencia como parte de la relación entre versiones.
 
 
 

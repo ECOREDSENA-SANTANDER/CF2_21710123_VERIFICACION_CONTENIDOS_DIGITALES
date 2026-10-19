@@ -21,7 +21,7 @@
     
     .cajon.color-secundario.p-4.mb-4(data-aos="fade-down-left")
       .h5 La huella trabaja sobre datos, no sobre significado
-      p.mb-0 Dos fotografías visualmente iguales pueden tener #[em hashes] diferentes si cambia la compresión, los metadatos, las dimensiones, el formato o el perfil de color. Por ello, una diferencia de hash demuestra una diferencia digital, no necesariamente una manipulación engañosa. C2PA utiliza hashes criptográficos en las denominadas vinculaciones fuertes, que asocian un manifiesto con un activo o con regiones específicas de este (C2PA, 2026a).
+      p.mb-0 Dos fotografías visualmente iguales pueden tener #[em hashes] diferentes si cambia la compresión, los metadatos, las dimensiones, el formato o el perfil de color. Por ello, una diferencia de #[em hash] demuestra una diferencia digital, no necesariamente una manipulación engañosa. C2PA utiliza #[em hashes] criptográficos en las denominadas vinculaciones fuertes, que asocian un manifiesto con un activo o con regiones específicas de este (C2PA, 2026a).
 
     separador
     #t_2_2.titulo-segundo.mb-4(data-aos="zoom-in-left")
@@ -32,7 +32,7 @@
         img(src='@/assets/curso/temas/t2/img02.png', alt='')
       .col-lg-8 
         p.bg2.p-4 Los contenidos digitales se transforman durante la creación, el almacenamiento, la edición, la publicación, la distribución y la reutilización. Una versión puede ser redimensionada, recortada, convertida, comprimida, corregida o anonimizada de manera legítima. Por ello, encontrar versiones diferentes no equivale a detectar una irregularidad; la verificación debe determinar qué relación existe entre ellas.
-        p La comparación técnica puede considerar tamaño, dimensiones, duración, códecs, metadatos, fechas, hashes, estructura interna y elementos visuales o auditivos. La comparación contextual incorpora fuente, orden temporal, propósito de publicación y documentación asociada. Si una fotografía de 4032 × 3024 píxeles se publica después en 1920 × 1440 y luego en 1080 × 1080, sus hashes pueden ser distintos y, aun así, existir una cadena legítima de derivación. La conclusión debe describir la transformación identificada y la evidencia que sustenta la relación entre versiones.
+        p La comparación técnica puede considerar tamaño, dimensiones, duración, códecs, metadatos, fechas, #[em hashes], estructura interna y elementos visuales o auditivos. La comparación contextual incorpora fuente, orden temporal, propósito de publicación y documentación asociada. Si una fotografía de 4032 × 3024 píxeles se publica después en 1920 × 1440 y luego en 1080 × 1080, sus #[em hashes] pueden ser distintos y, aun así, existir una cadena legítima de derivación. La conclusión debe describir la transformación identificada y la evidencia que sustenta la relación entre versiones.
 
     separador
     #t_2_3.titulo-segundo.mb-4(data-aos="zoom-in-left")
@@ -42,7 +42,7 @@
       .col-lg-12
         img(src='@/assets/curso/temas/t2/img03.png', alt='')
 
-    p Uno de los desafíos centrales consiste en garantizar que la información de procedencia corresponda al contenido examinado. C2PA utiliza el concepto de content binding para asociar un activo con un manifiesto. Las vinculaciones fuertes emplean hashes criptográficos para comprobar la correspondencia exacta de los datos protegidos; las vinculaciones flexibles pueden apoyarse en huellas perceptuales o marcas de agua capaces de mantener relaciones útiles después de determinadas transformaciones (C2PA, 2026a).
+    p Uno de los desafíos centrales consiste en garantizar que la información de procedencia corresponda al contenido examinado. C2PA utiliza el concepto de #[em content binding] para asociar un activo con un manifiesto. Las vinculaciones fuertes emplean #[em hashes]criptográficos para comprobar la correspondencia exacta de los datos protegidos; las vinculaciones flexibles pueden apoyarse en huellas perceptuales o marcas de agua capaces de mantener relaciones útiles después de determinadas transformaciones (C2PA, 2026a).
 
 
     .row.justify-content-center.align-items-center.mb-3(data-aos="zoom-in-left")
@@ -67,7 +67,7 @@
                 td Relacionar contenidos perceptualmente similares
                 td Puede conservar utilidad después de redimensionamiento, recodificación u otras transformaciones.
 
-    p Una vinculación flexible no equivale a una prueba criptográfica de igualdad. Su valor reside en ayudar a recuperar o relacionar la procedencia cuando el activo ha cambiado. Esta diferencia prepara el análisis de credenciales de contenido, donde los hashes, las firmas, los ingredientes y las acciones se integran en una estructura más amplia.
+    p Una vinculación flexible no equivale a una prueba criptográfica de igualdad. Su valor reside en ayudar a recuperar o relacionar la procedencia cuando el activo ha cambiado. Esta diferencia prepara el análisis de credenciales de contenido, donde los #[em hashes], las firmas, los ingredientes y las acciones se integran en una estructura más amplia.
 
 
 

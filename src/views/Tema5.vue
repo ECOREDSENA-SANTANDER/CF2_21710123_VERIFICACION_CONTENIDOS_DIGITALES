@@ -77,7 +77,7 @@
             .tarjeta.color-acento-contenido
               .p-4.text-white
                 h4.text-center Diferencia clave
-                p.mb-0.text-center El hash criptográfico busca igualdad exacta, mientras que la huella perceptual busca similitud suficiente para reconocer una relación.
+                p.mb-0.text-center El #[em hash] criptográfico busca igualdad exacta, mientras que la huella perceptual busca similitud suficiente para reconocer una relación.
 
 
     .row.justify-content-start.mb-4(data-aos="zoom-in-left")

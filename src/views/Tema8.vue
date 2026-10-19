@@ -23,7 +23,7 @@
         .col-lg-4.col-md-7.col-10.mb-3
           img(src='@/assets/curso/temas/t8/img02.png', alt='')
         .col-lg-8
-          p.bg2.p-4 El propósito explica por qué se realizó la verificación; por ejemplo, “determinar las evidencias técnicas disponibles sobre procedencia, integridad y autenticidad de una fotografía recibida para publicación institucional”. El alcance indica el activo, la versión, las fuentes, las técnicas, el periodo y las exclusiones. La metodología describe de manera reproducible las operaciones realizadas: preservación, extracción de metadatos, contraste de fuentes, cálculo de hash, comparación de versiones, recuperación de credenciales y validación de firma y certificado.
+          p.bg2.p-4 El propósito explica por qué se realizó la verificación; por ejemplo, “determinar las evidencias técnicas disponibles sobre procedencia, integridad y autenticidad de una fotografía recibida para publicación institucional”. El alcance indica el activo, la versión, las fuentes, las técnicas, el periodo y las exclusiones. La metodología describe de manera reproducible las operaciones realizadas: preservación, extracción de metadatos, contraste de fuentes, cálculo de #[em hash], comparación de versiones, recuperación de credenciales y validación de firma y certificado.
           p Una metodología adecuada no necesita registrar cada clic, pero sí los elementos suficientes para reconstruir el procedimiento. Cuando el alcance excluye peritaje forense, determinación jurídica de autoría o inspección de dispositivos físicos, esas limitaciones deben declararse expresamente para evitar interpretaciones que excedan la competencia del análisis.
         
     separador

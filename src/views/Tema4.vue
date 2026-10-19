@@ -45,7 +45,7 @@
 
     .row.justify-content-center.align-items-center.mb-0.fondo02.p-4(data-aos="zoom-in-left")
       .col-lg-6.mb-3 
-        P Dentro de las credenciales C2PA, la vinculación fuerte prioriza la exactitud criptográfica y la flexible prioriza la capacidad de reconocimiento después de transformaciones. Un hash puede dejar de coincidir tras redimensionar una imagen o recomprimir un video, mientras que una huella perceptual puede conservar una relación útil. Sin embargo, la huella perceptual no ofrece la misma garantía de identidad binaria. El analista debe reconocer qué mecanismo se aplicó y qué tipo de afirmación permite sustentar.a
+        P Dentro de las credenciales C2PA, la vinculación fuerte prioriza la exactitud criptográfica y la flexible prioriza la capacidad de reconocimiento después de transformaciones. Un #[em hash] puede dejar de coincidir tras redimensionar una imagen o recomprimir un video, mientras que una huella perceptual puede conservar una relación útil. Sin embargo, la huella perceptual no ofrece la misma garantía de identidad binaria. El analista debe reconocer qué mecanismo se aplicó y qué tipo de afirmación permite sustentar.a
       .col-lg-5.col-md-9
         img(src='@/assets/curso/temas/t4/img04.png', alt='')
 

@@ -11,7 +11,7 @@
       .col-lg-12
         img(src='@/assets/curso/temas/t7/img01.png', alt='')
 
-    p La aplicación de metadatos, hashes, comparación de versiones, firmas, certificados, credenciales y mecanismos de detección genera múltiples resultados. Una colección de datos aislados todavía no constituye una conclusión. La información debe consolidarse, clasificarse e interpretarse diferenciando evidencia confirmada, información declarada, datos ausentes, inconsistencias y aspectos no verificables. Tres preguntas orientan esta etapa: ¿qué se comprobó?, ¿con qué evidencia se comprobó?, ¿hasta dónde permite llegar esa evidencia?
+    p La aplicación de metadatos, #[em hashes], comparación de versiones, firmas, certificados, credenciales y mecanismos de detección genera múltiples resultados. Una colección de datos aislados todavía no constituye una conclusión. La información debe consolidarse, clasificarse e interpretarse diferenciando evidencia confirmada, información declarada, datos ausentes, inconsistencias y aspectos no verificables. Tres preguntas orientan esta etapa: ¿qué se comprobó?, ¿con qué evidencia se comprobó?, ¿hasta dónde permite llegar esa evidencia?
 
     separador
     #t_7_1.titulo-segundo.mb-4(data-aos="zoom-in-left")

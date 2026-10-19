@@ -143,7 +143,7 @@
 
     .cajon.color-secundario.p-4.mb-0(data-aos="zoom-in-left")
       .h5 Caso integrador
-      p En un caso integrador, una institución puede recibir un video que no coincide por hash con la versión de repositorio porque fue recomprimido y perdió su credencial C2PA. Si la versión institucional conserva la credencial y supera las validaciones de firma y vinculación, la conclusión responsable no sería “el video recibido es falso”, sino “la copia recibida es una versión derivada con menor trazabilidad; para publicación se recomienda utilizar la versión recuperada directamente del repositorio institucional”. Esta formulación ejemplifica el principio central del componente: construir conclusiones proporcionales a la evidencia disponible.
+      p En un caso integrador, una institución puede recibir un video que no coincide por #[em hash] con la versión de repositorio porque fue recomprimido y perdió su credencial C2PA. Si la versión institucional conserva la credencial y supera las validaciones de firma y vinculación, la conclusión responsable no sería “el video recibido es falso”, sino “la copia recibida es una versión derivada con menor trazabilidad; para publicación se recomienda utilizar la versión recuperada directamente del repositorio institucional”. Esta formulación ejemplifica el principio central del componente: construir conclusiones proporcionales a la evidencia disponible.
 
 
 
